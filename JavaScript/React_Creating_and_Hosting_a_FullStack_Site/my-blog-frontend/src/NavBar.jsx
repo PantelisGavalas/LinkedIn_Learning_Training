@@ -1,0 +1,50 @@
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { getAuth, signOut } from "firebase/auth";
+import useUser from "./useUser";
+
+const NavBar = () => {
+    // Our custom useUser hook. With its results we have our logic to devide what to return/display
+    const { isLoading, user } = useUser();
+
+    // use it to navigate our user to login page when he signs out
+    const navigate = useNavigate();
+
+    // our Navigation Bar for Home, About, Articles
+    // and our Loading logic with displaying email (if logged in) and Sign in/out button.
+    return (
+        <nav>
+            <ul>
+                <li>
+                    <Link to="/">Home</Link>
+                </li>
+                <li>
+                    <Link to="/about">About</Link>
+                </li>
+                <li>
+                    <Link to="/articles">Articles</Link>
+                </li>
+                {isLoading ? (
+                    <li>Loading...</li>
+                ) : (
+                    <>
+                        {user && <li>Logged in as: {user.email}</li>}
+                        <li>
+                            {user ? (
+                                <button onClick={() => signOut(getAuth())}>
+                                    Sign out
+                                </button>
+                            ) : (
+                                <button onClick={() => navigate("/login")}>
+                                    Sign In
+                                </button>
+                            )}
+                        </li>
+                    </>
+                )}
+            </ul>
+        </nav>
+    );
+};
+
+export default NavBar;

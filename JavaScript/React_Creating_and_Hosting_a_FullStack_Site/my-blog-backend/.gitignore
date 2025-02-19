@@ -1,0 +1,5 @@
+node_modules
+credentials.json
+dist
+.env
+prod-env.yaml
