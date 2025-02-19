@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Audio and Video</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<style>
+    body{
+        background-color:rgb(37, 37, 37);
+        color:aliceblue;
+        padding: 2rem;
+        margin: 0;
+    }
+    button {
+        background-color: #3D0000;
+        border-color: rgb(82, 82, 82);
+        border-radius: 8px;
+        border-style: solid;
+        color: rgb(180, 180, 180);
+        font-size: 1.2rem;
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+        height: 36px;
+    }
+    #media-controls {
+        width: 600px;
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+        position: relative;
+    }
+    #time-display {
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+        color: rgb(180, 180, 180);
+        font-size: 1.3rem;
+        position: absolute;
+        right: 0px;
+        top: 15px;
+    }
+    #controlbar-rail {
+        background-color: darkred;
+        height: 3px;
+        margin-bottom: 0.6rem;
+        cursor: pointer;
+    }
+    #controlbar-fill {
+        background-color: rgb(246, 216, 172);
+        height: 3px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <video id="video-element" src="../../media/video.mp4" poster="../../media/still.png" preload="metadata" width="600"></video>
+
+    <div id="media-controls">
+        <div id="controlbar-rail">
+            <div id="controlbar-fill">
+            </div>
+        </div>
+
+        <button id="play-button">Play</button>
+        <button id="pause-button">Pause</button>
+
+        <div id="time-display">
+            <time id="position-display">00:00</time>
+            <time id="duration-display">00:00</time>
+        </div>
+    </div>
+
+    <script>
+        var media = document.querySelector('#video-element');
+        var play = document.querySelector('#play-button');
+        var pause = document.querySelector('#pause-button');
+        var position = document.querySelector('#position-display');
+        var duration = document.querySelector('#duration-display');
+        var rail = document.querySelector('#controlbar-rail');
+        var fill = document.querySelector('#controlbar-fill');
+    </script>
+
+</body>
+</html>

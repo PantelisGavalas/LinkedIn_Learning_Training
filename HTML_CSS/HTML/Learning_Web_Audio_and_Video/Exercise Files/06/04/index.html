@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Audio and Video</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<style>
+    body{
+        background-color:rgb(37, 37, 37);
+        color:aliceblue;
+        padding: 2rem;
+        margin: 0;
+    }
+    button {
+        background-color: #3D0000;
+        border-color: rgb(82, 82, 82);
+        border-radius: 8px;
+        border-style: solid;
+        color: rgb(180, 180, 180);
+        font-size: 1.2rem;
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+        height: 36px;
+        cursor: pointer;
+    }
+    #media-controls {
+        width: 600px;
+        margin-top: 0.3rem;
+        margin-bottom: 0.3rem;
+        position: relative;
+    }
+    #time-display {
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+        color: rgb(180, 180, 180);
+        font-size: 1.3rem;
+        position: absolute;
+        right: 0px;
+        top: 15px;
+    }
+    #controlbar-rail {
+        background-color: darkred;
+        height: 3px;
+        margin-bottom: 0.6rem;
+        cursor: pointer;
+    }
+    #controlbar-fill {
+        background-color: rgb(246, 216, 172);
+        height: 3px;
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <video id="video-element" src="../../media/video.mp4" poster="../../media/still.png" preload="metadata" width="600"></video>
+
+    <div id="media-controls">
+        <div id="controlbar-rail">
+            <div id="controlbar-fill">
+            </div>
+        </div>
+
+        <button id="play-button">Play</button>
+        <button id="pause-button">Pause</button>
+
+        <div id="time-display">
+            <time id="position-display">00:00</time>
+            <time id="duration-display">00:00</time>
+        </div>
+    </div>
+
+    <script>
+        // Variables for each of our media controls
+        var media = document.querySelector('#video-element');
+        var play = document.querySelector('#play-button');
+        var pause = document.querySelector('#pause-button');
+        var position = document.querySelector('#position-display');
+        var duration = document.querySelector('#duration-display');
+        var rail = document.querySelector('#controlbar-rail');
+        var fill = document.querySelector('#controlbar-fill');
+
+        // event listeners for each event we want along with their functions
+        //play button
+        play.addEventListener('click', playMedia);
+        function playMedia() {
+            media.play();
+        }
+
+        // pause button
+        pause.addEventListener('click', pauseMedia);
+        function pauseMedia() {
+            media.pause();
+        }
+
+        // progress bar
+        rail.addEventListener('click', seekMedia);
+        fill.addEventListener('click', seekMedia);
+        function seekMedia(e) {
+        }
+
+        // timing :  current & duration
+        media.addEventListener('loadedmetadata', updateTime);
+        media.addEventListener('timeupdate', updateTime);
+        function updateTime() {
+            position.textContent = timeDisplay(media.currentTime);
+            duration.textContent = timeDisplay(media.duration);
+        }
+        function timeDisplay(t) {
+            var minutes = Math.floor(t / 60);
+            var seconds = Math.floor(t - minutes * 60);
+            var minutevalue;
+            if (minutes < 10) {
+                minutevalue = '0' + minutes;
+            } else {
+                minutevalue = minutes;
+            }
+            var secondvalue;
+            if (seconds < 10) {
+                secondvalue = '0' + seconds;
+            } else {
+                secondvalue = seconds;
+            }
+            var mediatime = minutevalue + ':' + secondvalue;
+            return mediatime;
+        }
+
+    </script>
+
+</body>
+</html>
