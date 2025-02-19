@@ -1,0 +1,41 @@
+ Step 1
+--------
+We need to have Node.js installed (from https://nodejs.org/en).
+We check it in the terminal with:
+"node -v"
+
+
+
+ Step 2
+--------
+We check the version of npm on terminal with:
+"npm -v"
+Anything above 5.2 allows us to run Step 3.
+
+
+
+ Step 3
+--------
+We go to our wanted directory with cd and run:
+"npm create-react-app our-react-project-name"
+This installs React, ReactDOM, React Scripts (Babel, compiling etc.) and sets up everything from scratch for us.
+
+
+
+ EXTRA Step
+------------
+If Step 3 doesn't work we can run:
+"npm uninstall -g create-react-app"
+and then:
+"npm install -g create-react-app"
+to reinstall it globally.
+
+
+
+ Step 4
+--------
+Once that's done we go inside our app:
+"cd our-react-project-name"
+and then do:
+"npm start"
+This pops up a localhost window which is the starting point for building our app that will run locally.
