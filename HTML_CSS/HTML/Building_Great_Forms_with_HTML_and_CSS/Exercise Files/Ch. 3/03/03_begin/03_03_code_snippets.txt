@@ -1,0 +1,13 @@
+/* Focus */
+input:focus, textarea:focus {
+	outline: solid 1px #04bae9;
+	border:2px solid #04bae9;
+	box-shadow:0 0 5px #04bae9;
+	background-color: #cbf1fb;
+}
+
+// Other styles for the page
+ body {
+	background: url(images/aboveTree2.jpg) no-repeat center center fixed;
+	background-size: cover;
+}

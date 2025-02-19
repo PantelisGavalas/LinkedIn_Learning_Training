@@ -1,0 +1,164 @@
+/* adjustment for spacing and position for stepper elements on mobile */
+.form-group.selectNum {
+    width: 40%;
+}
+
+/* adjustment for position and spacing on travel class element on mobile */
+.travelClass {
+    width: 67%; /* adjust width on mobile */
+    width: 100%;
+    margin-top: 2.5em; /* on small screen need more spacing ebtween this and steppers */
+}
+
+/* stepper wrapper, need to adjust width and set position for mobile */
+.stepper {
+    width: 150px; /* make a little wider */
+    position: relative; /* need this so we can use absolute on children */
+}
+
+button.plus, button.minus {
+    position: absolute;
+    height: 32px;
+}
+
+button.minus {
+    left: 5px;
+}
+
+button.plus {
+    right: 40px;
+}
+
+/* stepper input */
+input.stepper-control {
+    position: absolute;
+    left: 32px;
+}
+/* adjust position of date within date field */
+/*
+input::-webkit-datetime-edit-fields-wrapper {
+    position: absolute;
+    bottom: 6px;
+}
+*/
+/* need toposition relative so I can position the date info*/
+/*
+input[type="date"] {
+    position: relative;
+}
+*/
+/* make sure that the label appears in front */
+#flightBook .form-label {
+    z-index: 10;
+}
+
+/*
+#flightBook .form-control input[type="date"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+*/
+
+/*
+input[type=date]::-webkit-inner-spin-button,
+  input[type=date]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+  }
+
+  input[type=date] {
+    -moz-appearance: textfield;
+  }
+*/
+
+/*
+#flightbook .form-control {
+        outline: none;
+}
+*/
+
+/* remove browsers default styles (gradient bg) for date inputs and make it 'invis' so we can custom style it */
+input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    color: #95a5a6;
+    border:1px solid #ecf0f1;
+    background:#ecf0f1;
+    padding:5px;
+    display: inline-block !important;
+    visibility: visible !important;
+    position: relative; /* need to position relative so I can position the date info*/
+}
+
+/* style the date input elements, need to remove browsers defaults and add custom so this works the same on mobile */
+#flightBook .form-control:[type="date"] {
+    width: 100%;
+	min-width: 230px;
+    
+/*
+    background-color: #fff;
+    height: 60px;
+    padding: 24px 15px 0;
+    color: #dfe5e9;
+    border: 2px solid #dfe5e9;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    display: block;
+*/
+}
+
+
+
+/*
+input[type="text"] {
+    border-top: 0;
+}
+*/
+
+/* fix for double top border on mobile */
+#flightBook .form-control, #flightBook .stepper-control {
+/*
+   outline: none;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+*/
+   background-clip: padding-box;
+}
+
+/* custom focus style */
+input:focus, select:focus {
+    /* border: solid 1px #3dc2dc; */
+    outline: solid 2px #3dc2dc;
+    outline: none;
+    border: 0;
+    box-shadow: 0 0 5px #3dc2dc;
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 430px) {
+    #flightBook .form-control:[type="date"] {
+        min-width: 100%;
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    #flightBook .form-control#travClass {
+        width: 94%;
+    }
+    
+    .travelClass {
+        margin-top: 0;
+    }
+    
+    #flightBook select.form-control+.select-arrow {
+        right: 10%;
+    }
+    
+    .form-group.selectNum {
+        width: 100%;
+    }
+}

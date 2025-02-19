@@ -1,0 +1,5 @@
+/*
+******** JS CODE SNIPPETS ******** 
+*/
+
+document.addEventListener("touchstart", function() {}, true); // This snippet will enable hover effects for touchscreens
