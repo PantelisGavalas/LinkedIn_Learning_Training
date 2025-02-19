@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/01_07e/01_07e.iml" filepath="$PROJECT_DIR$/Exercise Files/01_07e/01_07e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/02_02b/02_02b.iml" filepath="$PROJECT_DIR$/Exercise Files/02_02b/02_02b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/02_02e/02_02e.iml" filepath="$PROJECT_DIR$/Exercise Files/02_02e/02_02e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/02_03b/02_03b.iml" filepath="$PROJECT_DIR$/Exercise Files/02_03b/02_03b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/02_03e/02_03e.iml" filepath="$PROJECT_DIR$/Exercise Files/02_03e/02_03e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/02_04b/02_04b.iml" filepath="$PROJECT_DIR$/Exercise Files/02_04b/02_04b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/02_04e/02_04e.iml" filepath="$PROJECT_DIR$/Exercise Files/02_04e/02_04e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/02_05b/02_05b.iml" filepath="$PROJECT_DIR$/Exercise Files/02_05b/02_05b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/02_05e/02_05e.iml" filepath="$PROJECT_DIR$/Exercise Files/02_05e/02_05e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/02_06b/02_06b.iml" filepath="$PROJECT_DIR$/Exercise Files/02_06b/02_06b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/02_06e/02_06e.iml" filepath="$PROJECT_DIR$/Exercise Files/02_06e/02_06e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/03_03b/03_03b.iml" filepath="$PROJECT_DIR$/Exercise Files/03_03b/03_03b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/03_03e/03_03e.iml" filepath="$PROJECT_DIR$/Exercise Files/03_03e/03_03e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/03_06b/03_06b.iml" filepath="$PROJECT_DIR$/Exercise Files/03_06b/03_06b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/03_06e/03_06e.iml" filepath="$PROJECT_DIR$/Exercise Files/03_06e/03_06e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/03_07b/03_07b.iml" filepath="$PROJECT_DIR$/Exercise Files/03_07b/03_07b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/03_08b/03_08b.iml" filepath="$PROJECT_DIR$/Exercise Files/03_08b/03_08b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/03_08e/03_08e.iml" filepath="$PROJECT_DIR$/Exercise Files/03_08e/03_08e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/04_01b/04_01b.iml" filepath="$PROJECT_DIR$/Exercise Files/04_01b/04_01b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/04_01e/04_01e.iml" filepath="$PROJECT_DIR$/Exercise Files/04_01e/04_01e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/04_02b/04_02b.iml" filepath="$PROJECT_DIR$/Exercise Files/04_02b/04_02b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/04_02e/04_02e.iml" filepath="$PROJECT_DIR$/Exercise Files/04_02e/04_02e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/04_03b/04_03b.iml" filepath="$PROJECT_DIR$/Exercise Files/04_03b/04_03b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/04_04b/04_04b.iml" filepath="$PROJECT_DIR$/Exercise Files/04_04b/04_04b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/04_04e/04_04e.iml" filepath="$PROJECT_DIR$/Exercise Files/04_04e/04_04e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/05_02b/05_02b.iml" filepath="$PROJECT_DIR$/Exercise Files/05_02b/05_02b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/05_02e/05_02e.iml" filepath="$PROJECT_DIR$/Exercise Files/05_02e/05_02e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/05_03b/05_03b.iml" filepath="$PROJECT_DIR$/Exercise Files/05_03b/05_03b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/05_03e/05_03e.iml" filepath="$PROJECT_DIR$/Exercise Files/05_03e/05_03e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/05_04b/05_04b.iml" filepath="$PROJECT_DIR$/Exercise Files/05_04b/05_04b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/05_04e/05_04e.iml" filepath="$PROJECT_DIR$/Exercise Files/05_04e/05_04e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/05_05b/05_05b.iml" filepath="$PROJECT_DIR$/Exercise Files/05_05b/05_05b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/05_05e/05_05e.iml" filepath="$PROJECT_DIR$/Exercise Files/05_05e/05_05e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/05_06b/05_06b.iml" filepath="$PROJECT_DIR$/Exercise Files/05_06b/05_06b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/05_06e/05_06e.iml" filepath="$PROJECT_DIR$/Exercise Files/05_06e/05_06e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/05_08b/05_08b.iml" filepath="$PROJECT_DIR$/Exercise Files/05_08b/05_08b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/05_8e/05_8e.iml" filepath="$PROJECT_DIR$/Exercise Files/05_8e/05_8e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/06_03b/06_03b.iml" filepath="$PROJECT_DIR$/Exercise Files/06_03b/06_03b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/06_03e/06_03e.iml" filepath="$PROJECT_DIR$/Exercise Files/06_03e/06_03e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/06_04b/06_04b.iml" filepath="$PROJECT_DIR$/Exercise Files/06_04b/06_04b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/06_04e/06_04e.iml" filepath="$PROJECT_DIR$/Exercise Files/06_04e/06_04e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/06_05b/06_05b.iml" filepath="$PROJECT_DIR$/Exercise Files/06_05b/06_05b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/06_05e/06_05e.iml" filepath="$PROJECT_DIR$/Exercise Files/06_05e/06_05e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/06_06b/06_06b.iml" filepath="$PROJECT_DIR$/Exercise Files/06_06b/06_06b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/06_06e/06_06e.iml" filepath="$PROJECT_DIR$/Exercise Files/06_06e/06_06e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/06_07b/06_07b.iml" filepath="$PROJECT_DIR$/Exercise Files/06_07b/06_07b.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/06_07e/06_07e.iml" filepath="$PROJECT_DIR$/Exercise Files/06_07e/06_07e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/06_10e/06_10e.iml" filepath="$PROJECT_DIR$/Exercise Files/06_10e/06_10e.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Exercise Files/Exercise Files.iml" filepath="$PROJECT_DIR$/Exercise Files/Exercise Files.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Learning Java 11.iml" filepath="$PROJECT_DIR$/.idea/Learning Java 11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LearningJava/LearningJava.iml" filepath="$PROJECT_DIR$/LearningJava/LearningJava.iml" />
+    </modules>
+  </component>
+</project>
