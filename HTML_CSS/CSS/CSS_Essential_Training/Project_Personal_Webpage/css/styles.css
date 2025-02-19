@@ -1,0 +1,268 @@
+/*
+COLOR PALETTE
+
+Dark green    #3c8453
+Sandy beige   #bcaa96
+Dark gray     #222222
+Light gray    #d3d4d6
+Off-white     #f6f6f6
+*/
+
+/* GLOBAL STYLES 
+------------------*/
+/* 
+  Box Model Fix
+  https://www.paulirish.com/2012/box-sizing-border-box-ftw/
+*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;   /*setting default rem = 10px*/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background: #f6f6f6;
+    margin: 0%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.5rem;  /* 15px */
+    line-height: 140%;
+}
+h1, h2, h3 {
+    font-family: "Caveat", cursive;
+    font-weight: 400;
+    margin: 0;
+}
+h1 {
+    font-size: 6.0rem;
+    line-height: 1.2;
+}
+h2 {
+    font-size: 3.0rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+
+/* links */
+a {
+    color: #3c8453;
+}
+a:hover {
+    color: #bcaa96;
+    text-decoration: none;
+}
+.btn {
+    background: #3c8453;
+    color: #f6f6f6;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 7px;
+    line-height: 1;
+    border-radius: 7px;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
+}
+
+
+/* HOME 
+----------*/
+.home {
+    background: url(../images/bg-home-office-city.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.home .content-wrapper {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: auto;
+}
+.content-bg {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+}
+
+@media screen and (max-width: 650px) {
+    .home .content-wrapper {
+        padding: 10px;
+    }
+    .content-bg {
+        padding: 20px;
+    }
+}
+
+
+/* RESUME 
+-----------*/
+.resume header::before {
+    background: url(../images/bg-home-office-city.jpg);
+    background-size: cover;
+    background-position: center;
+    content: "";    /*must be there for the ::before to work*/
+    display: block;
+    height: 375px;
+}
+
+.resume-section {
+    margin-bottom: 50px;
+}
+.resume-section h2 {
+    padding-bottom: 8px;
+    border-bottom: 2px dashed #d3d4d6;
+}
+
+.download-link {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .download-link {
+        position: absolute;
+    }
+}
+@media screen and (max-width: 500px) {
+    .resume header::before {
+        height: 200px;
+    }
+    h1 {
+        font-size: 4.0rem;
+    }
+    h2 {
+        font-size: 2.7rem;
+    }
+}
+
+
+/* Profil 
+-----------*/
+
+/* Projects 
+-------------*/
+.project-item {
+    margin: 30px 0;
+}
+.project-item img {
+    width: 300px;
+}
+
+@media screen and (min-width: 890px) {
+    .project-item {
+        display: flow-root;
+    }
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 889px) {
+    .project-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+    .project-item img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 500px) {
+    .project-item img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Work Experience 
+--------------------*/
+.work-item {
+    margin: 30px 0;
+}
+.work-details p {
+    margin: 0;
+    line-height: 1.7;
+}
+.work-details h3 {
+    line-height: 1.2;
+}
+
+@media screen and (min-width: 860px) {
+    .work-item {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        column-gap: 20px;
+    }
+    .work-summary p:first-child {
+        margin-top: 0;
+    }
+}
+
+/* Education 
+--------------*/
+.education-item {
+    margin: 30px 0;
+}
+.education-item h3 {
+    line-height: 1.2;
+}
+.education-item p {
+    margin: 0;
+    line-height: 1.7;
+}
+
+
+/* FOOTER 
+-----------*/
+footer {
+    background: #222222;
+    color: #d3d4d6;
+}
+footer a {
+    color: #bcaa96;
+}
+footer a:hover {
+    color: #3c8453;
+}
+.socials {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 10px;
+}
+.socials li {
+    display: inline-block;
+}
+.socials img {
+    width: 32px;
+}
+.socials img:hover {
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 800px) {
+    footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 799px) {
+    footer {
+        text-align: center;
+        padding: 10px;
+    }
+}
