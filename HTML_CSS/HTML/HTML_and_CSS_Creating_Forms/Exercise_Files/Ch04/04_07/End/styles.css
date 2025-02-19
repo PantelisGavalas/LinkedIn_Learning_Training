@@ -1,0 +1,34 @@
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: 100%
+}
+input, textarea, select {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#styled input, #styled button {
+	border-radius: 8px;
+	cursor: pointer;
+	background-color: rgba(228, 148, 44, 0.2);
+}
+
+input, button {
+	margin: 10px;
+}
+
+#styled input[type="submit"]:focus, #styled button[type="submit"]:focus {
+	border: 2px solid green;
+	background-color: rgba(0, 128, 0, 0.2);
+	outline:none;
+}
+#styled input[type="submit"]:hover, #styled button[type="submit"]:hover {
+	border: 2px solid crimson;
+}
+#styled input[type="submit"]:active, #styled button[type="submit"]:active {
+	background-color: rgba(220, 20, 60, 0.2);
+}
+button span {
+	color: crimson;
+	font-style: italic;
+	font-weight: bold;
+}

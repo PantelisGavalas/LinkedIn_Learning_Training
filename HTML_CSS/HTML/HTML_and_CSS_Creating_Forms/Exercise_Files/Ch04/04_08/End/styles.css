@@ -1,0 +1,22 @@
+button, input, select, textarea {
+	font-family: inherit;
+	font-size: 100%
+}
+input, textarea, select {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+input:required  {
+	border: 2px solid purple;
+}
+
+input:focus {
+	background-color: #ABEBC6;
+}
+input:active {
+	background-color: #f194f1;
+}
+
+input[type="number"]:invalid {
+	border: 5px solid red;;
+}
