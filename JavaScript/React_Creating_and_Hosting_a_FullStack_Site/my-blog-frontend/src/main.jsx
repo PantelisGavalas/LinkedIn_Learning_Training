@@ -11,7 +11,7 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBo2MBzEAtMVNt5OEaafUzTdnMEIjbOXuQ",
+    apiKey: "HERE GOES THE API KEY FROM OUR (SAME NAME) FIREBASE AUTH PROJECT",    // DUMMY STRING --> CHANGE WITH REAL AUTH KEY
     authDomain: "full-stack-react-tutorial-blog.firebaseapp.com",
     projectId: "full-stack-react-tutorial-blog",
     storageBucket: "full-stack-react-tutorial-blog.firebasestorage.app",
